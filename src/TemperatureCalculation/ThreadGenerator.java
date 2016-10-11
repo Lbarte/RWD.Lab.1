@@ -16,14 +16,6 @@ public class ThreadGenerator implements Runnable {
 		threadInstance.start();
 	}
 	
-	int getTemperature() {
-		return temperature;
-	}
-	
-	void setChecked() {
-		System.out.println(threadName + " використано в основному потоці");
-	}
-	
 	public void run() {
 		try {
 			Sensor sensorInstance = new Sensor();	//	клас, що генерується в окремому потоці

@@ -21,7 +21,6 @@ public class ThreadGeneration implements Runnable {
 		for (int index = 1; index < 101; index++) {
 			try {
 				ThreadGenerator threadGeneratorInstance = new ThreadGenerator(index, generationIndex);
-				threadGeneratorInstance.setChecked();
 			} catch (Exception e) {
 				System.out.println("Помилка із сенсором " + (index));
 			}
