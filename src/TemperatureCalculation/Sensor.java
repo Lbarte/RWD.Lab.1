@@ -1,14 +1,17 @@
 package TemperatureCalculation;
-	//Давач
+
+import java.util.Random;
+
+//Давач
 public class Sensor {
 
-	private RandomNumber randNumberInstance = new RandomNumber();
+	private Random randomInstance = new Random();
 	
 	protected final int getTemperature() {
-		return randNumberInstance.getTemp();
+		return randomInstance.nextInt(50) - 10;
 	}
 	
 	protected final int getDelay() {
-		return randNumberInstance.getDelay();
+		return randomInstance.nextInt(9)+1;
 	}
 }
